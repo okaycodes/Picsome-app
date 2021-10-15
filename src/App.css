@@ -11,14 +11,11 @@
  :root{
    --fc-primary: black;
    --fc-secondary: #f1faee;
-   --ff-primary: 'Heebo', sans-serif;
-   --ff-secondary: 'Raleway', sans-serif;
+   --ff-primary: 'Roboto', sans-serif;
    --fw-reg: 300;
    --fw-bold: 900;
    --color-primary: #FFFFF8;
    --color-secondary: #000000;
-   --color-accent: #457b9d;
-
  }
 
  html{ scroll-behavior: smooth;}
