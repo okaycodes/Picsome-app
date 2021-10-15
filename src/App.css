@@ -1,3 +1,33 @@
-.App {
-  text-align: center;
-}
+/*===========
+    GLOBAL
+ ===========*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Raleway:wght@600&display=swap');
+
+*
+*::before,
+*::after{
+   box-sizing: border-box;
+ }
+
+ :root{
+   --fc-primary: black;
+   --fc-secondary: #f1faee;
+   --ff-primary: 'Heebo', sans-serif;
+   --ff-secondary: 'Raleway', sans-serif;
+   --fw-reg: 300;
+   --fw-bold: 900;
+   --color-primary: #FFFFF8;
+   --color-secondary: #000000;
+   --color-accent: #457b9d;
+
+ }
+
+ html{ scroll-behavior: smooth;}
+
+ body{
+   color: var(--fc-primary);
+   margin: 0 auto;
+   font-size: 1.125rem;
+   font-family: var(--ff-primary);
+   background-color: var(--color-primary)
+ }
