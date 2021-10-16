@@ -14,8 +14,6 @@
    --ff-primary: 'Roboto', sans-serif;
    --fw-reg: 300;
    --fw-bold: 900;
-   --color-primary: #FFFFF8;
-   --color-secondary: #000000;
  }
 
  html{ scroll-behavior: smooth;}
