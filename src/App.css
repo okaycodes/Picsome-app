@@ -9,8 +9,6 @@
  }
 
  :root{
-   --fc-primary: black;
-   --fc-secondary: #f1faee;
    --ff-primary: 'Roboto', sans-serif;
    --fw-reg: 300;
    --fw-bold: 900;
@@ -23,5 +21,4 @@
    margin: 0 auto;
    font-size: 1.125rem;
    font-family: var(--ff-primary);
-   background-color: var(--color-primary)
  }
