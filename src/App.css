@@ -9,7 +9,21 @@
  }
 
  :root{
-   --ff-primary: 'Roboto', sans-serif;
+   --white: #FFFFFF;
+   --black: #150605;
+   --red: #EA453C;
+   --pink: #F47B6E;
+   --light-blue: #EFFBFE;
+   --blue: #ACE6EC;
+
+   /* Theme 1 */
+   --color-primary: var(--white);
+   --color-secondary__light: var(--pink);
+   --color-secondary__dark: var(--red);
+   --color-accent__light: var(--lightblue);
+   --color-accent__dark: var(--blue);
+
+   --font-primary: 'Roboto', sans-serif;
    --fw-reg: 300;
    --fw-bold: 900;
  }
@@ -21,4 +35,8 @@
    margin: 0 auto;
    font-size: 1.125rem;
    font-family: var(--ff-primary);
+ }
+
+ a, button{
+   cursor: pointer;
  }
