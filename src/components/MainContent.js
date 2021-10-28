@@ -1,16 +1,17 @@
-import React, {Component} from "react"
+import React, {useState, useEffect} from "react"
+import add from "./../icons/add.svg"
+import heartThin from "./../icons/heart-thin.svg"
+import heartFilled from "./../icons/heart-filled.svg"
 
-class MainContent extends Component{
-  constructor(){
-    super()
-    this.state = {}
-  }
 
-  render (){
-    return(
-      <div>Place Holder Main content</div>
-    )
-  }
+
+function MainContent(){
+
+  return(
+    <div className="photosCollage">
+
+    </div>
+  )
 }
 
 
