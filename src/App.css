@@ -1,7 +1,7 @@
 /*===========
     GLOBAL
  ===========*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
 *
 *::before,
 *::after{
@@ -13,17 +13,17 @@
    --black: #150605;
    --red: #EA453C;
    --pink: #F47B6E;
+   --blue: #212BFC;
    --light-blue: #EFFBFE;
-   --blue: #ACE6EC;
 
    /* Theme 1 */
-   --color-primary: var(--white);
-   --color-secondary__light: var(--pink);
-   --color-secondary__dark: var(--red);
-   --color-accent__light: var(--lightblue);
-   --color-accent__dark: var(--blue);
+   --color__primary: var(--white);
+   --color__secondary--light: var(--pink);
+   --color__secondary--dark: var(--red);
+   --color__accent--light: var(--lightblue);
+   --color__accent--dark: var(--blue);
 
-   --font-primary: 'Roboto', sans-serif;
+   --font-primary: 'Oswald', sans-serif;
    --fw-reg: 300;
    --fw-bold: 900;
  }
@@ -31,10 +31,18 @@
  html{ scroll-behavior: smooth;}
 
  body{
-   color: var(--fc-primary);
+   color: var(--color__secondary--dark);
    margin: 0 auto;
    font-size: 1.125rem;
-   font-family: var(--ff-primary);
+   font-family: var(--font-primary);
+ }
+
+ h1,h2,p{
+   margin: 0;
+ }
+
+ h1{
+   font-size: 2.5rem;
  }
 
  a, button{
