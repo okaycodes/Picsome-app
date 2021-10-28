@@ -1,14 +1,15 @@
 import React from "react"
 import {Link} from "react-router-dom"
 
-import icon from "./../icons/shopping-cart.svg"
+import cartEmpty from "./../icons/shopping-cart.svg"
+import cartItem from "./../icons/cart.svg"
 
-function Header(){
+function Header(props){
   return (
     <div className="header">
       <div className="header__container">
         <h1><Link className="header__link" to="/">Pic Some</Link></h1>
-        <Link><img className="icon" src={icon} alt=""/></Link>
+        <Link to="/cart"><img className="icon" src={cartEmpty} alt=""/></Link>
       </div>
     </div>
   )
