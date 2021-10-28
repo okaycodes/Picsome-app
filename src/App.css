@@ -48,3 +48,21 @@
  a, button{
    cursor: pointer;
  }
+
+
+/* Layout */
+
+.header{
+  background-color: var(--color__secondary--light);
+  padding: 1em;
+}
+.header__link{
+  text-decoration: none;
+  color: var(--color__accent--dark)
+}
+.header__link:visited{
+  color: none;
+}
+.header__link:hover{
+  color: var(--color__primary)
+}
