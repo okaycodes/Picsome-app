@@ -13,7 +13,7 @@
    --black: #150605;
    --red: #EA453C;
    --pink: #F47B6E;
-   --blue: #212BFC;
+   --blue: #2E02DB;
    --light-blue: #EFFBFE;
 
    /* Theme 1 */
@@ -54,7 +54,14 @@
 
 .header{
   background-color: var(--color__secondary--light);
-  padding: 1em;
+  padding: 1em 2em;
+}
+.header__container{
+  margin: 0 auto;
+  max-width: 950px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header__link{
   text-decoration: none;
