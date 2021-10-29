@@ -1,7 +1,11 @@
 import React from "react"
 
 function Footer(){
-  return(<p>Placeholder footer</p>)
+  return(
+    <div className="footer">
+      <h4>© PicSome 2021</h4>
+    </div>
+  )
 }
 
 
