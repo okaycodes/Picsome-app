@@ -9,7 +9,12 @@ function Header(props){
     <div className="header">
       <div className="header__container">
         <h1><Link className="header__link" to="/">Pic Some</Link></h1>
-        <Link to="/cart"><img className="icon" src={cartEmpty} alt=""/></Link>
+        <Link to="/cart">
+          <img
+            className="icon"
+            src={props.shoppingCart.length===0 ? cartEmpty:cartItem}
+            alt=""/>
+        </Link>
       </div>
     </div>
   )
