@@ -8,6 +8,16 @@ import Cart from "./pages/Cart"
 import {Switch, Route} from "react-router-dom"
 
 function App() {
+  const [shoppingCart, setShoppingCart] = useState([])
+
+  const editCart=(item)=>{
+    shoppingCart.find(i=>i.id===item.id) !== undefined ?
+    setShoppingCart(prevCart=>prevCart.filter(i=>i!==item))
+    :
+    setShoppingCart(prevCart=>[...prevCart, item])
+  }
+
+  console.log(shoppingCart)
 
   return (
     <div className="App">
@@ -16,7 +26,7 @@ function App() {
 
         <Switch>
           <Route exact path="/">
-            <MainContent />
+            <MainContent shoppingCart={shoppingCart} editCart={editCart}/>
           </Route>
 
           <Route path="/details/:productId">
