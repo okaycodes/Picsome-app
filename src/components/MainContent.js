@@ -3,6 +3,7 @@ import add from "./../icons/add.svg"
 import remove from "./../icons/remove.svg"
 import heartThin from "./../icons/heart-thin.svg"
 import heartFilled from "./../icons/heart-filled.svg"
+import {Link} from "react-router-dom"
 
 
 
@@ -30,7 +31,8 @@ function MainContent(props){
       })
   }, [])
 
-    const photos = photosData.map(i=>
+  const photos = photosData.map(i=>
+    <Link to={`/details/${i.id}`}>
       <div key={i.id} className="photo" style={{backgroundImage: `url(${i.download_url})`}}>
         <div className="photo__actions">
           <img
@@ -53,7 +55,8 @@ function MainContent(props){
           />
         </div>
       </div>
-    )
+    </Link>
+  )
 
   return(
     <div className="photosCollage">
