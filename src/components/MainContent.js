@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from "react"
 import add from "./../icons/add.svg"
+import remove from "./../icons/remove.svg"
 import heartThin from "./../icons/heart-thin.svg"
 import heartFilled from "./../icons/heart-filled.svg"
 
 
 
-function MainContent(){
+function MainContent(props){
   const [photosData, setPhotosData] = useState([])
 
   const handleClick=(id)=>{
@@ -40,8 +41,15 @@ function MainContent(){
           />
           <img
           className="add"
-          src={add}
+          src={
+            props.shoppingCart.find(item=>item.id===i.id) !== undefined ?
+            remove:add
+          }
           alt=""
+          onClick={()=>{
+            props.editCart(i)
+          }
+          }
           />
         </div>
       </div>
