@@ -189,6 +189,48 @@ hovered using the above method */
     cursor: pointer;
 }
 
+/* Cart page */
+.check-out{
+  color: black;
+  text-align: center;
+}
+.cart-items{
+  padding: 2em 1.5em;
+}
+.cart-item{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+.cart-item__actions{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.cart-item__img{
+  width: 170px;
+  height: 90px;
+  object-fit: cover;
+}
+.cart-item__del-btn{
+  width: 25px;
+}
+.cart-item__del-btn:hover,
+.update-cart__btn:hover{
+  filter: invert(40%) sepia(25%) saturate(6772%) hue-rotate(339deg) brightness(95%) contrast(93%);
+}
+.cart-item__price,
+.check-out__price{
+  font-size: 1.65rem;
+}
+.check-out__btn{
+  font-size: 1.125rem;
+  margin-top: 3em;
+  padding: .7em 1em;
+}
 
 
 /* Footer */
