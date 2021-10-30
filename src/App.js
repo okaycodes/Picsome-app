@@ -17,7 +17,9 @@ function App() {
     setShoppingCart(prevCart=>[...prevCart, item])
   }
 
-  console.log(shoppingCart)
+  const clearCart=()=>{
+    setShoppingCart([])
+  }
 
   return (
     <div className="App">
@@ -30,11 +32,15 @@ function App() {
           </Route>
 
           <Route path="/details/:productId">
-            <Details />
+            <Details shoppingCart={shoppingCart} editCart={editCart}/>
           </Route>
 
           <Route path="/cart">
-            <Cart />
+            <Cart
+              shoppingCart={shoppingCart}
+              editCart={editCart}
+              clearCart={clearCart}
+              />
           </Route>
         </Switch>
       </div>
