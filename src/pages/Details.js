@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from "react"
+import plus from "./../icons/collapse-plus.svg"
+import minus from "./../icons/expand-minus.svg"
 import {useParams} from "react-router-dom"
 
 
-function Details(){
+function Details(props){
   const{productId} = useParams()
   const [photoDetails, setPhotosDetails] = useState({})
 
@@ -21,7 +23,7 @@ function Details(){
           }
           )
       })
-  })
+  },[productId])
 
   return(
     <div className="photo-details">
@@ -30,6 +32,24 @@ function Details(){
         <p>Description: {photoDetails.description}</p>
         <p>Price:  ${photoDetails.price}</p>
         <p>Author: {photoDetails.author}</p>
+        <div className="update-cart">
+          <div>
+            {props.shoppingCart.find(item=>item.id===photoDetails.id) !== undefined ?
+              "Remove from cart: ":"Add to Cart: "}
+          </div>
+          <img
+          className="update-cart__btn"
+          src={
+            props.shoppingCart.find(item=>item.id===photoDetails.id) !== undefined ?
+            minus:plus
+          }
+          alt=""
+          onClick={()=>{
+            props.editCart(photoDetails)
+          }
+          }
+          />
+        </div>
       </div>
       <img
         className="photo-details__img"
