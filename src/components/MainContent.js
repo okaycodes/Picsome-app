@@ -22,7 +22,7 @@ function MainContent(props){
 
 
   useEffect(()=>{
-    fetch("https://picsum.photos/v2/list?page=2&limit=10")
+    fetch("https://picsum.photos/v2/list?page=3&limit=15")
       .then(response=>response.json())
       .then(data=>{
         // add a new variable isFavorited before setting state
@@ -32,8 +32,8 @@ function MainContent(props){
   }, [])
 
   const photos = photosData.map(i=>
-    <Link to={`/details/${i.id}`}>
       <div key={i.id} className="photo" style={{backgroundImage: `url(${i.download_url})`}}>
+        <Link className="photo__link"to={`/details/${i.id}`}></Link>
         <div className="photo__actions">
           <img
           className={i.isFavorited ?"isLiked":"like"}
@@ -55,7 +55,6 @@ function MainContent(props){
           />
         </div>
       </div>
-    </Link>
   )
 
   return(
