@@ -26,7 +26,7 @@ function MainContent(props){
       .then(response=>response.json())
       .then(data=>{
         // add a new variable isFavorited before setting state
-        const withFavoriteVar = data.map(i=>({...i, isFavorited: false}))
+        const withFavoriteVar = data.map(i=>({...i, isFavorited: false, price:50}))
         setPhotosData(withFavoriteVar)
       })
   }, [])
