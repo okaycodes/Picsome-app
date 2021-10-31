@@ -123,11 +123,11 @@ not nested in the link */
 }
 
 
-.add,
+.update,
 .like{
   opacity: 0;
 }
-.photo:hover .add,
+.photo:hover .update,
 .photo:hover .like{
   opacity: .8;
 }
@@ -136,14 +136,14 @@ hovered using the above method */
 .isLiked{
   opacity: .8
 }
-.add,
+.update,
 .like,
 .isLiked{
   height: 20px;
   width: 20px;
   cursor: pointer;
 }
-.add{
+.update{
   filter: invert(92%) sepia(5%) saturate(1256%) hue-rotate(124deg) brightness(94%) contrast(98%);
 }
 .like,
