@@ -12,11 +12,8 @@ function MainContent(props){
 
   const handleClick=(id)=>{
     const editedData =  photosData.map(i=>{
-      if(i.id===id){
-          return {...i, isFavorited: !i.isFavorited}
-      }
-      return i
-    })
+      if(i.id===id){return {...i, isFavorited: !i.isFavorited}
+      }return i})
     setPhotosData(editedData)
   }
 
@@ -26,8 +23,8 @@ function MainContent(props){
       .then(response=>response.json())
       .then(data=>{
         // add a new variable isFavorited before setting state
-        const withFavoriteVar = data.map(i=>({...i, isFavorited: false, price:50}))
-        setPhotosData(withFavoriteVar)
+        const favoriteVar = data.map(i=>({...i, isFavorited: false, price:50}))
+        setPhotosData(favoriteVar)
       })
   }, [])
 
