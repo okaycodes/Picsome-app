@@ -13,8 +13,7 @@ function Details(props){
       .then(res=>res.json())
       .then(data=>{
         setPhotosDetails(
-          {
-            ...data,
+          { ...data,
             price:50,
             description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
