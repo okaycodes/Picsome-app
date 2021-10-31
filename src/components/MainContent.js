@@ -28,7 +28,8 @@ function MainContent(props){
       })
   }, [])
 
-  const photos = photosData.map(i=>
+
+  const photos = photosData.map(i =>
       <div key={i.id} className="photo" style={{backgroundImage: `url(${i.download_url})`}}>
         <Link className="photo__link"to={`/details/${i.id}`}></Link>
         <div className="photo__actions">
@@ -39,7 +40,7 @@ function MainContent(props){
           onClick={()=>handleClick(i.id)}
           />
           <img
-          className="add"
+          className="update"
           src={props.shoppingCart.find(item=>item.id===i.id) !== undefined ?remove:add}
           alt=""
           onClick={()=>{props.editCart(i)}}
@@ -47,6 +48,7 @@ function MainContent(props){
         </div>
       </div>
   )
+
 
   return(
     <div className="photosCollage">
