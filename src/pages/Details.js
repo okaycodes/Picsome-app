@@ -38,16 +38,10 @@ function Details(props){
               "Remove from cart: ":"Add to Cart: "}
           </div>
           <img
-          className="update-cart__btn"
-          src={
-            props.shoppingCart.find(item=>item.id===photoDetails.id) !== undefined ?
-            minus:plus
-          }
-          alt=""
-          onClick={()=>{
-            props.editCart(photoDetails)
-          }
-          }
+            className="update-cart__btn"
+            src={props.shoppingCart.find(item=>item.id===photoDetails.id) !== undefined?minus:plus}
+            alt=""
+            onClick={()=>{props.editCart(photoDetails)}}
           />
         </div>
       </div>
