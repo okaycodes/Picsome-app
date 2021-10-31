@@ -40,15 +40,9 @@ function MainContent(props){
           />
           <img
           className="add"
-          src={
-            props.shoppingCart.find(item=>item.id===i.id) !== undefined ?
-            remove:add
-          }
+          src={props.shoppingCart.find(item=>item.id===i.id) !== undefined ?remove:add}
           alt=""
-          onClick={()=>{
-            props.editCart(i)
-          }
-          }
+          onClick={()=>{props.editCart(i)}}
           />
         </div>
       </div>
