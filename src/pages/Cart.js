@@ -44,9 +44,12 @@ function Cart(props){
         }
       </div>
       <p className="check-out__price">Total: ${totalPrice}</p>
-
-      {cartItems.length> 0 &&
-        <button className="check-out__btn"onClick={handleClick}>{order}</button>}
+      {
+        cartItems.length> 0 &&
+        <button className="check-out__btn" onClick={handleClick}>
+          {order}
+        </button>
+      }
     </div>
   )
 }
