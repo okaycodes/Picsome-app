@@ -6,3 +6,8 @@ function addClass (item){
     return big
   }
 }
+
+/*
+considering the possibility of using a collage with
+differently sized pictures
+*/
