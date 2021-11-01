@@ -34,7 +34,7 @@ function Cart(props){
     </div>
   ))
   return (
-    <div className="check-out">
+    <div className="check-out wrapper">
       <h1 className="check-out__header">Check out</h1>
       <div className="cart-items">
         {cartItems.length > 0 ?
