@@ -106,7 +106,10 @@ img{
   column-span: 2;
 }
 
-
+.big{
+  column-span: 2;
+  row-span: 2;
+}
 
 .photo__link::after{
   content: "";
