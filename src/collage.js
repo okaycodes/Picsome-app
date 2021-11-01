@@ -6,3 +6,6 @@ function addClass (item){
     return big
   }
 }
+
+
+export default addClass
