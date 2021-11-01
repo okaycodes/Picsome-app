@@ -102,6 +102,11 @@ img{
   display: flex;
   justify-content: space-between;
 }
+.wide{
+  column-span: 2;
+}
+
+
 
 .photo__link::after{
   content: "";
