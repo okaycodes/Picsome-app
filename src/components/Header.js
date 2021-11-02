@@ -3,6 +3,7 @@ import {Link} from "react-router-dom"
 
 import cartEmpty from "./../icons/shopping-cart.svg"
 import cartItem from "./../icons/cart.svg"
+import PropTypes from "prop-types"
 
 function Header(props){
   return (
@@ -18,6 +19,9 @@ function Header(props){
       </div>
     </div>
   )
+}
+Header.propTypes = {
+  shoppingCart: PropTypes.arrayOf(PropTypes.object)
 }
 
 
