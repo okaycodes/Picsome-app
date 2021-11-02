@@ -55,7 +55,8 @@ function Details(props){
 }
 
 Details.propTypes = {
-  shoppingCart: PropTypes.arrayOf(PropTypes.object)
+  shoppingCart: PropTypes.arrayOf(PropTypes.object),
+  editCart: PropTypes.func
 }
 
 export default Details
