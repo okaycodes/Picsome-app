@@ -1,5 +1,6 @@
 import {useState} from "react"
 import minus from "./../icons/expand-minus.svg"
+import PropTypes from "prop-types"
 
 
 function Cart(props){
@@ -53,5 +54,10 @@ function Cart(props){
     </div>
   )
 }
+
+Cart.propTypes = {
+  shoppingCart: PropTypes.arrayOf(PropTypes.object)
+}
+
 
 export default Cart
