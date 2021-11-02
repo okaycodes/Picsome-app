@@ -4,6 +4,7 @@ import remove from "./../icons/remove.svg"
 import heartThin from "./../icons/heart-thin.svg"
 import heartFilled from "./../icons/heart-filled.svg"
 import {Link} from "react-router-dom"
+import PropTypes from "prop-types"
 
 
 
@@ -55,6 +56,10 @@ function MainContent(props){
       {photos}
     </div>
   )
+}
+
+MainContent.propTypes = {
+  shoppingCart: PropTypes.arrayOf(PropTypes.object)
 }
 
 
