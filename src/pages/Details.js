@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react"
 import plus from "./../icons/collapse-plus.svg"
 import minus from "./../icons/expand-minus.svg"
 import {useParams} from "react-router-dom"
+import PropTypes from "prop-types"
 
 
 function Details(props){
