@@ -59,7 +59,8 @@ function MainContent(props){
 }
 
 MainContent.propTypes = {
-  shoppingCart: PropTypes.arrayOf(PropTypes.object)
+  shoppingCart: PropTypes.arrayOf(PropTypes.object),
+  editCart: PropTypes.func
 }
 
 
