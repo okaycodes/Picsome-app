@@ -54,4 +54,8 @@ function Details(props){
   )
 }
 
+Details.propTypes = {
+  shoppingCart: PropTypes.arrayOf(PropTypes.object)
+}
+
 export default Details
