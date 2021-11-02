@@ -56,7 +56,9 @@ function Cart(props){
 }
 
 Cart.propTypes = {
-  shoppingCart: PropTypes.arrayOf(PropTypes.object)
+  shoppingCart: PropTypes.arrayOf(PropTypes.object),
+  editCart: PropTypes.func,
+  clearCart: PropTypes.func
 }
 
 
