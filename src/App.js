@@ -20,6 +20,7 @@ function App() {
   const clearCart=()=>{
     setShoppingCart([])
   }
+  
 
   return (
     <div className="App">
